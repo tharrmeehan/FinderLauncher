@@ -1,5 +1,7 @@
 # FinderLauncher
 
+<img src="FinderLauncherApp/Assets.xcassets/macOS.appiconset/macOS-512.png" alt="FinderLauncher app icon" width="160">
+
 FinderLauncher is a native macOS menu bar app with a Finder Sync extension. It adds configurable Finder actions for opening items in other apps, creating a text file in the current folder, and copying paths.
 
 ## Features
