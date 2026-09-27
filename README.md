@@ -56,4 +56,4 @@ This repository contains source code and does not include a signed or notarized 
 
 ## License
 
-No license has been selected for this repository.
+Licensed under the MIT License. See [LICENSE](LICENSE).
