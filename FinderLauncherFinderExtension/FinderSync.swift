@@ -150,8 +150,7 @@ final class FinderSync: FIFinderSync {
             menu.addItem(item)
         }
 
-        let showsCopyPath = NSEvent.modifierFlags.contains(.option)
-        if !applications.isEmpty && (isContainerMenu || showsCopyPath) {
+        if !applications.isEmpty {
             menu.addItem(.separator())
         }
         if isContainerMenu {
@@ -159,15 +158,12 @@ final class FinderSync: FIFinderSync {
             newTextFileItem.target = self
             newTextFileItem.image = NSImage(systemSymbolName: "doc.badge.plus", accessibilityDescription: "New Text File")
             menu.addItem(newTextFileItem)
-            if showsCopyPath { menu.addItem(.separator()) }
+            menu.addItem(.separator())
         }
-        if showsCopyPath {
-            let copyPathItem = NSMenuItem(title: "Copy Path", action: copyPathAction, keyEquivalent: "")
-            copyPathItem.target = self
-            copyPathItem.image = NSImage(systemSymbolName: "doc.on.doc", accessibilityDescription: "Copy Path")
-            menu.addItem(copyPathItem)
-        }
-        guard !menu.items.isEmpty else { return nil }
+        let copyPathItem = NSMenuItem(title: "Copy Path", action: copyPathAction, keyEquivalent: "")
+        copyPathItem.target = self
+        copyPathItem.image = NSImage(systemSymbolName: "doc.on.doc", accessibilityDescription: "Copy Path")
+        menu.addItem(copyPathItem)
         return menu
     }
 

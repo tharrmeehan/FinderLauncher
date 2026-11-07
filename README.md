@@ -8,7 +8,7 @@ FinderLauncher is a native macOS menu bar app with a Finder Sync extension. It a
 
 - Open selected files or folders in configured applications.
 - Create a uniquely named `New Text File.txt` in the current folder.
-- Hold Option while opening a Finder context menu to show **Copy Path**. Multiple selected paths are copied one per line.
+- Choose **Copy Path** in a Finder context menu to copy the selected file or folder paths, or the current folder when clicking its background. Multiple selected paths are copied one per line.
 - Manage applications, menu bar visibility, and launch at login from FinderLauncher settings.
 
 ## Requirements
